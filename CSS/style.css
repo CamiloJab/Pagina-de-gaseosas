@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    display: inline-block;
+}
+header {
+    padding:15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* estructura para buscar la clase logo, para evitar usar otro logo*/
+header .container .logo {
+    width: 100px;
+}
+
+/* estructura para buscar las etiquetas <a> */
+header .container a {
+    color: red;
+    text-decoration: none; /* para remover las lienas del link*/
+    margin: 0 15px;
+}
+
+.boton {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: red;
+}
+
+.boton.botonRojo {
+    justify-content: center;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.container {
+    width: 140 px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+#inicio img{
+    width: 100%;
+    display: block;
+}
+
+#Inicio .bloqueInicio {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 500px;
+    text-align: center;
+    margin-left: -100px;
+}
+
+#Inicio .bloqueInicio h1 {
+    color: white;
+    font-size: 42px;
+}
+
+#Inicio .bloqueInicio p {
+    color: white;
+    font-size: 14px;
+}
