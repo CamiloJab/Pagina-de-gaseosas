@@ -27,7 +27,7 @@ header .container .logo {
 }
 
 /* estructura para buscar las etiquetas <a> */
-header .container a {
+header .container nav a {
     color: red;
     text-decoration: none; /* para remover las lienas del link*/
     margin: 0 15px;
@@ -45,12 +45,60 @@ header .container a {
     color: white;
     background-color: red;
     border-radius: 10px;
+    font-weight: bold;
+}
+
+.boton.botonBlanco {
+    justify-content: center;
+    color: red;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid red;
+}
+
+.seccion {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cuadradoPerfecto{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.cuadradoPerfecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*para editar tamaños de imagenes y videos*/
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .container {
     width: 140 px;
     margin: 0px auto;
     padding: 0px 15px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.columna{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.columna33{
+    width: 33.33%;
 }
 
 #inicio img{
@@ -75,4 +123,41 @@ header .container a {
 #Inicio .bloqueInicio p {
     color: white;
     font-size: 14px;
+}
+
+#Nosotros {
+    background-image: url(../img/latas.jpg);
+    background-size: cover;
+}
+
+#Nosotros p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+#Servicios .bloqueServicio{
+    border: 1px solid gray
+}
+
+#Servicios .bloqueServicio .bloqueServicioImg{
+
+}
+
+#Servicios .bloqueServicio .bloqueServicioImg img{
+    width: 100%;
+}
+
+#Servicios .bloqueServicio .bloqueServicioTexto {
+    padding: 15px;
+}
+
+#Servicios .bloqueServicio .bloqueServicioTexto .cuadradoPerfecto{
+    padding-bottom: 56.25%;
+}
+
+#Servicios .bloqueServicio .bloqueServicioTexto h3{
+    margin-top: 0px;
+    font-size: 25px;
 }
