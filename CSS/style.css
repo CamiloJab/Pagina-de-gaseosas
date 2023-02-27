@@ -7,6 +7,7 @@ body {
 }
 a {
     display: inline-block;
+    text-decoration: none;
 }
 header {
     padding:15px 0;
@@ -33,17 +34,70 @@ header .container nav a {
     margin: 0 15px;
 }
 
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer .barraFooter {
+    background-color: gray;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10 px;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+footer logoFooter {
+    width: 100%;
+}
+
+footer .redes{
+    font-size: 30px;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .redes a {
+    margin: 0 7.5px
+}
+
 .boton {
     text-align: center;
     text-decoration: none;
     padding: 15px 30px;
     color: red;
+    border: none;
 }
 
 .boton.botonRojo {
     justify-content: center;
     color: white;
     background-color: red;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.boton.botonNegro {
+    justify-content: center;
+    color: white;
+    background-color: black;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -56,11 +110,6 @@ header .container nav a {
     font-weight: bold;
     font-size: 16px;
     border: 1px solid red;
-}
-
-.seccion {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .cuadradoPerfecto{
@@ -80,9 +129,16 @@ header .container nav a {
 }
 
 .container {
-    width: 140 px;
+    width: 1140 px;
     margin: 0px auto;
     padding: 0px 15px;
+    position: relative;
+}
+
+.containerFluid {
+    width: 100%;
+    padding: 0px 15px;
+    position: relative;
 }
 
 .row{
@@ -97,13 +153,30 @@ header .container nav a {
     padding-right: 15px;
 }
 
+.columna25{
+
+}
+
 .columna33{
     width: 33.33%;
 }
+.columna50{
+    width: 50%;
+}
+
+.empujar50{
+    margin-left: 50%;
+}
+
+.empujar0{
+    margin-left: 0;
+}
+
 
 #inicio img{
     width: 100%;
     display: block;
+    background-size: cover;
 }
 
 #Inicio .bloqueInicio {
@@ -130,6 +203,12 @@ header .container nav a {
     background-size: cover;
 }
 
+#Nosotros .container h1 {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+}
+
 #Nosotros p {
     color: white;
     text-align: center;
@@ -141,8 +220,10 @@ header .container nav a {
     border: 1px solid gray
 }
 
-#Servicios .bloqueServicio .bloqueServicioImg{
-
+#Servicios .container h1 {
+    color: black;
+    font-size: 42px;
+    text-align: center;
 }
 
 #Servicios .bloqueServicio .bloqueServicioImg img{
@@ -160,4 +241,71 @@ header .container nav a {
 #Servicios .bloqueServicio .bloqueServicioTexto h3{
     margin-top: 0px;
     font-size: 25px;
+}
+
+#Galeria h4 {
+    padding:0px 15px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+#Galeria img {
+    filter: grayscale(1);
+}
+
+#Galeria .cuadradoPerfecto:hover img {
+    filter: grayscale(0);
+}
+
+#Contactenos {
+    position: relative;
+}
+
+#Contactenos iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+}
+#Contactenos .containerFormulario{
+    position: relative;
+    bottom: -100px;
+}
+
+#Contactenos form {
+    padding: 60px;
+    background-color: red;
+}
+
+#Contactenos form .formBlock{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#Contactenos form .formBlock .formControl{
+    display: block;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#Contactenos form .formBlock textArea{
+    display: block;
+    height: 100px;
+    font-size: 16px;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+#Contactenos form .formBlock.bloqueUltimo{
+ margin-bottom: 0;
 }
