@@ -34,6 +34,11 @@ header .container nav a {
     margin: 0 15px;
 }
 
+header .container .hamb 
+{
+    display: none;
+}
+
 footer{
     background-color: black;
     color: white;
@@ -48,6 +53,7 @@ footer .barraFooter {
 footer ul {
     padding-left: 0;
     list-style: none;
+    margin: 0;
 }
 
 footer ul li {
@@ -129,7 +135,7 @@ footer .redes a {
 }
 
 .container {
-    width: 1140 px;
+
     margin: 0px auto;
     padding: 0px 15px;
     position: relative;
@@ -169,7 +175,7 @@ footer .redes a {
 }
 
 
-#inicio img{
+#Inicio img{
     width: 100%;
     display: block;
     background-size: cover;
@@ -304,4 +310,81 @@ footer .redes a {
 
 #Contactenos form .formBlock.bloqueUltimo{
  margin-bottom: 0;
+}
+
+@media(max-width: 767px)
+{
+    body
+    {
+        font-size: 15px;
+    }
+
+    header .container nav
+    {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s ease;
+        transform: translateX(100%);
+    }
+
+    header .container nav a
+    {
+        font-size: 20px;
+        margin: 15px 0px;
+    }
+
+    header .container .hamb 
+    {
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+
+    .container
+    {
+        width: 100%;
+    }
+
+    .columnaMobile100
+    {
+        width: 100%;
+        margin: 0px 20px;
+        margin-bottom: 15px;
+    }
+
+    #Inicio
+    {
+        height: 100vh;
+    }
+
+    #Inicio img
+    {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #Inicio .bloqueInicio 
+    {
+        top:40%;
+        left: 30%;
+    }
+
+    .rowCel{
+        width: 100%;
+        /*display: grid;
+        grid-template: 150px 150px /150px 150px;*/
+        justify-content: center;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
 }
