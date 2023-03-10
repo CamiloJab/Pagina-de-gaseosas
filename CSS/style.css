@@ -148,6 +148,7 @@ footer .redes a {
 }
 
 .row{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -167,17 +168,20 @@ footer .redes a {
 }
 
 .empujar50{
-    margin-left: 50%;
+    margin-left: 45%;
 }
 
 .empujar0{
     margin-left: 0;
 }
 
+.logoFooter {
+    width: 100%;
+}
+
 
 #Inicio img{
     width: 100%;
-    display: block;
     background-size: cover;
 }
 
@@ -287,7 +291,7 @@ footer .redes a {
 
 #Contactenos form .formBlock{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 #Contactenos form .formBlock .formControl{
@@ -312,11 +316,27 @@ footer .redes a {
  margin-bottom: 0;
 }
 
-@media(max-width: 767px)
+@media (max-width: 991px){
+    
+    main {
+        font-size: 10px;
+    }
+    
+    #Inicio .bloqueInicio {
+        top: 30%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 575px)
 {
     body
     {
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    header{
+        width: 100%;
     }
 
     header .container nav
@@ -376,7 +396,25 @@ footer .redes a {
     #Inicio .bloqueInicio 
     {
         top:40%;
-        left: 30%;
+        left: 50%;
+    }
+
+    .bloqueInicio p {
+        font-size: 8px;
+    }
+
+    #Contactenos form {
+        padding: 10px;
+        background-color: red;
+    }
+
+    .logoFooter{
+        width: 100%;
+    }
+
+
+    #Contactenos form {
+        padding: 10px 12px
     }
 
     .rowCel{
@@ -384,7 +422,7 @@ footer .redes a {
         /*display: grid;
         grid-template: 150px 150px /150px 150px;*/
         justify-content: center;
-        margin-left: -15px;
-        margin-right: -15px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
